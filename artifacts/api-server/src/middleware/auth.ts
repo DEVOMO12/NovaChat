@@ -1,10 +1,14 @@
 import { Request, Response, NextFunction } from "express";
 import admin from "firebase-admin";
 
-if (!admin.apps.length) {
-  admin.initializeApp({
-    credential: admin.credential.applicationDefault(),
-  });
+try {
+  if (!admin.apps.length) {
+    admin.initializeApp({
+      credential: admin.credential.applicationDefault(),
+    });
+  }
+} catch (e) {
+  console.warn("Firebase Admin init failed (auth endpoints will 500):", (e as Error).message);
 }
 
 declare global {
