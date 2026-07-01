@@ -1,0 +1,1 @@
+{"version":3,"file":"messageReactions.d.ts","sourceRoot":"","sources":["../../src/schema/messageReactions.ts"],"names":[],"mappings":"AAIA,eAAO,MAAM,qBAAqB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAQ/B,CAAC;AAEJ,MAAM,MAAM,eAAe,GAAG,OAAO,qBAAqB,CAAC,YAAY,CAAC;AACxE,MAAM,MAAM,kBAAkB,GAAG,OAAO,qBAAqB,CAAC,YAAY,CAAC"}

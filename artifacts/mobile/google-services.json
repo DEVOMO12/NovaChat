@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602298580384",
+    "project_id": "novachat-c8272",
+    "storage_bucket": "novachat-c8272.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602298580384:android:c4d7087879c2640b7f78c5",
+        "android_client_info": {
+          "package_name": "com.Diablozo.NovaChat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602298580384-en312utkhpf0go8nniupgar7gfc6rnf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNfjvNAsEgpoHgzWXZLoclNMqic4TDOn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602298580384-en312utkhpf0go8nniupgar7gfc6rnf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
