@@ -1,20 +1,11 @@
-FROM node:20-slim AS base
+FROM node:20-slim
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
-COPY . /app
 WORKDIR /app
-
-FROM base AS prod-deps
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
-
-FROM base AS build
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
-RUN pnpm --filter @workspace/api-server run build
-
-FROM base
-COPY --from=prod-deps /app/node_modules /app/node_modules
-COPY --from=prod-deps /app/artifacts/api-server/node_modules /app/artifacts/api-server/node_modules
-COPY --from=build /app/artifacts/api-server/dist /app/artifacts/api-server/dist
+COPY . .
+RUN pnpm install --frozen-lockfile
+RUN pnpm --filter @workspace/api-server build
+ENV NODE_ENV=production
 EXPOSE 3000
 CMD ["node", "--enable-source-maps", "artifacts/api-server/dist/index.mjs"]
