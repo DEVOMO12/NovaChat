@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "NovaChat",
-    "slug": "mobile",
+    "slug": "diablozo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -37,8 +37,7 @@
           "origin": "https://replit.com/"
         }
       ],
-      "expo-font",
-      "@react-native-async-storage/async-storage"
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -46,7 +45,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "novachat-c8272"
+        "projectId": "8e31cd51-675f-4523-8c21-50858a933d17"
       }
     }
   }

@@ -11,18 +11,20 @@
         "buildType": "apk"
       }
     },
-    "preview": {
+     "preview": {
       "distribution": "internal",
       "android": {
         "buildType": "apk"
       },
+      "installCommand": "corepack enable pnpm && pnpm install",
       "env": {
         "EXPO_PUBLIC_FIREBASE_API_KEY": "AIzaSyDNfjvNAsEgpoHgzWXZLoclNMqic4TDOn0",
         "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "novachat-c8272.firebaseapp.com",
         "EXPO_PUBLIC_FIREBASE_PROJECT_ID": "novachat-c8272",
         "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET": "novachat-c8272.firebasestorage.app",
         "EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": "602298580384",
-        "EXPO_PUBLIC_FIREBASE_APP_ID": "1:602298580384:android:c4d7087879c2640b7f78c5"
+        "EXPO_PUBLIC_FIREBASE_APP_ID": "1:602298580384:android:c4d7087879c2640b7f78c5",
+        "EXPO_PUBLIC_API_URL": "https://novachat-api-production.up.railway.app/api"
       }
     },
     "production": {
