@@ -16,7 +16,6 @@
       "android": {
         "buildType": "apk"
       },
-      "installCommand": "corepack enable pnpm && pnpm install",
       "env": {
         "EXPO_PUBLIC_FIREBASE_API_KEY": "AIzaSyDNfjvNAsEgpoHgzWXZLoclNMqic4TDOn0",
         "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "novachat-c8272.firebaseapp.com",
